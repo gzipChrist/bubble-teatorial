@@ -4,12 +4,13 @@ import (
 	"context"
 	"encoding/json"
 	"fmt"
-	"github.com/charmbracelet/bubbles/textinput"
-	tea "github.com/charmbracelet/bubbletea"
 	"log"
 	"net/http"
 	url2 "net/url"
 	"time"
+
+	"github.com/charmbracelet/bubbles/textinput"
+	tea "github.com/charmbracelet/bubbletea"
 )
 
 func main() {
@@ -33,7 +34,7 @@ type Model struct {
 	err   error
 }
 
-// NewModel: intiail model
+// NewModel: initial model
 func NewModel() Model {
 	ti := textinput.New()
 	ti.Placeholder = "Enter search term"
